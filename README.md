@@ -2,4 +2,4 @@
 
 Simple viewer and editor for the MySQL Employees database
 
-Cloned from 
+Based on https://github.com/MartinWinton/MySQL-Employees.git

@@ -48,22 +48,23 @@ a {
 			$slots = [];
 
 			if (!empty($_GET["order"])) {
-				$slots = explode("_", $_GET["order"]);
-			}
-			$neworder = $slots[1];
-			switch ($slots[0]) {
-				case "E":
-					$type = "emp_no";
-					break;
-				case "F":
-					$type = "first_name";
-					break;
-				case "L":
-				default:
-					$type = "last_name";
-					break;
-			}
+				$order = $_GET["order"]
+				$slots = explode("_", $order);
 
+				$neworder = $slots[1];
+				switch ($slots[0]) {
+					case "E":
+						$type = "emp_no";
+						break;
+					case "F":
+						$type = "first_name";
+						break;
+					case "L":
+					default:
+						$type = "last_name";
+						break;
+				}
+			}
 			$self = $_SERVER['PHP_SELF'];
 
 			if($neworder != '') {
