@@ -45,10 +45,10 @@ a {
 			$neworder = '';
 			$order = "ASC";
 			$type ="first_name";
-			$slots = [];
+			$slots = array();
 
 			if (!empty($_GET["order"])) {
-				$order = $_GET["order"]
+				$order = $_GET["order"];
 				$slots = explode("_", $order);
 
 				$neworder = $slots[1];
